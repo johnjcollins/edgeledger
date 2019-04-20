@@ -27,8 +27,8 @@
     <!-- Navbar -->
     <nav id="navbar">
       <h1 class="logo">
-        <span class="text-primary"> <i class="fas fa-book-open"></i> Edge</span>
-        Ledger
+        <span class="text-primary"> <i class="fas fa-book-open"></i> Edge</span
+        >Ledger
       </h1>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -123,5 +123,64 @@
         </div>
       </div>
     </section>
+
+    <!-- Section: Contact -->
+    <section id="contact">
+      <div class="contact-form bg-primary p-2">
+        <h2 class="m-heading">Contact Us</h2>
+        <p>Please use the form below to contact us</p>
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="Enter Phone Number"
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Enter Message"
+            ></textarea>
+          </div>
+          <input type="submit" value="Send" class="btn btn-dark" />
+        </form>
+      </div>
+      <div class="map"></div>
+    </section>
+
+    <footer id="main-footer" class="bg-dark text-center btn-dark py-1">
+      <div class="container">
+        <p>Copyright &copy; 2019, EdgeLedger, All Rights Reserved</p>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRLzne_YfLk8RO5dxkQLGgd55W03eg794&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>
